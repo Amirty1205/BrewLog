@@ -1,0 +1,58 @@
+const en = {
+  documentTitle: 'Brewlog — Your coffee journal',
+  metaDescription: 'A personal journal for specialty coffee.',
+  headerJournal: 'YOUR PERSONAL COFFEE JOURNAL',
+  navigationLabel: 'Main navigation',
+  home: 'Home',
+  coffees: 'My coffees',
+  journal: 'Brew journal',
+  explore: 'Explore',
+  settings: 'Settings',
+  yourJournal: 'YOUR JOURNAL',
+  sidebarTitle: 'Make room for the ritual.',
+  sidebarDescription: 'A quiet place to notice what makes a good cup yours.',
+  switchToLightTheme: 'Switch to light theme',
+  switchToDarkTheme: 'Switch to dark theme',
+  homeEyebrow: 'A JOURNAL FOR THE EVERYDAY CUP',
+  homeHeadline: 'Good coffee is worth remembering.',
+  homeDescription:
+    'Keep the coffees you love close, and the little details that make each cup your own.',
+  homeFeatureLabel: 'FIELD NOTE · NO. 01',
+  homeFeatureTitle: 'The best cup is the one you notice.',
+  homeFeatureDescription:
+    'Start with a coffee you love. Pay attention to what makes it sing. The rest is yours to discover.',
+  visitCollection: 'Visit your collection',
+  freshPage: 'A FRESH PAGE',
+  makeItYours: 'Make it yours',
+  coffeeShelf: 'Your coffee shelf',
+  coffeeShelfDescription: 'A home for the beans you bring in.',
+  brewJournal: 'Your brew journal',
+  brewJournalDescription: 'Little notes from one cup to the next.',
+  homeFooter:
+    'Your journal is just getting started. Coffee and brew tracking are not available yet.',
+  placeholderTitle: 'A new page, waiting to be filled.',
+  placeholderDescription: 'This part of Brewlog is a placeholder for now.',
+  coffeesEyebrow: 'YOUR COLLECTION',
+  coffeesTitle: 'My coffees',
+  coffeesDescription:
+    'A thoughtful home for the coffees you bring into your daily ritual.',
+  journalEyebrow: 'BREW NOTES',
+  journalTitle: 'Brew journal',
+  journalDescription:
+    'Your brewing history will have a place here, one cup at a time.',
+  exploreEyebrow: 'A PLACEHOLDER',
+  exploreTitle: 'Explore',
+  exploreDescription:
+    'This space is reserved for a future release. Brewlog is a personal journal for now.',
+  preferences: 'YOUR PREFERENCES',
+  appearance: 'Appearance',
+  appearanceDescription: 'Choose a light or dark reading palette.',
+  lightTheme: 'Light',
+  darkTheme: 'Dark',
+  language: 'Language',
+  languageDescription: 'Choose the language used throughout Brewlog.',
+  englishLanguage: 'English',
+  persianLanguage: 'Persian',
+} as const
+
+export default en

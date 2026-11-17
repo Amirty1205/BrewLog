@@ -1,0 +1,130 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #25251f;
+  background: #f5f1e9;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --background: #f5f1e9;
+  --foreground: #25251f;
+  --card: #fbf9f4;
+  --card-foreground: #25251f;
+  --popover: #fbf9f4;
+  --popover-foreground: #25251f;
+  --primary: #a85f40;
+  --primary-foreground: #fffaf3;
+  --secondary: #ece5d9;
+  --secondary-foreground: #39382f;
+  --muted: #ece8df;
+  --muted-foreground: #85847c;
+  --accent: #e9ded1;
+  --accent-foreground: #6f3e2d;
+  --destructive: #a43e32;
+  --border: #dcd6ca;
+  --input: #dcd6ca;
+  --ring: #a85f40;
+  --radius: 0.75rem;
+}
+
+:lang(fa) {
+  font-family: "Vazirmatn Variable", "Vazirmatn", Tahoma, sans-serif;
+  line-height: 1.8;
+  letter-spacing: normal;
+}
+
+:lang(fa) * {
+  letter-spacing: normal;
+}
+
+:lang(fa) .font-display {
+  font-family: "Vazirmatn Variable", "Vazirmatn", Tahoma, sans-serif;
+}
+
+:lang(fa) h1,
+:lang(fa) h2,
+:lang(fa) h3 {
+  line-height: 1.5;
+}
+
+.dark {
+  color-scheme: dark;
+  color: #eee8dc;
+  background: #201f1b;
+
+  --background: #201f1b;
+  --foreground: #eee8dc;
+  --card: #292822;
+  --card-foreground: #eee8dc;
+  --popover: #292822;
+  --popover-foreground: #eee8dc;
+  --primary: #d28a68;
+  --primary-foreground: #261b15;
+  --secondary: #38372f;
+  --secondary-foreground: #e5dfd3;
+  --muted: #302f29;
+  --muted-foreground: #aaa69b;
+  --accent: #43342b;
+  --accent-foreground: #e6ad8c;
+  --destructive: #e18473;
+  --border: #403e35;
+  --input: #49463d;
+  --ring: #d28a68;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --font-display: Georgia, "Times New Roman", serif;
+  --font-sans: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  font: inherit;
+}
+
+::selection {
+  background: var(--primary);
+  color: var(--primary-foreground);
+}

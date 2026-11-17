@@ -1,0 +1,19 @@
+{
+  "name": "Brewlog — دفتر قهوه‌ی تو",
+  "short_name": "Brewlog",
+  "description": "دفتر شخصی برای قهوه و دم‌آوری.",
+  "lang": "fa",
+  "dir": "rtl",
+  "theme_color": "#F5F1E9",
+  "background_color": "#F5F1E9",
+  "display": "standalone",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/brewlog-mark.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
