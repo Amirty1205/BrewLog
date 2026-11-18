@@ -1,7 +1,7 @@
 import { useLanguage, type TranslationKey } from '@/app/providers/LanguageContext'
 
 interface PlaceholderPageProps {
-  page: 'coffees' | 'journal' | 'explore'
+  page: 'coffees' | 'coffeeDetail' | 'journal' | 'explore'
 }
 
 const pageCopy: Record<
@@ -12,6 +12,11 @@ const pageCopy: Record<
     eyebrow: 'coffeesEyebrow',
     title: 'coffeesTitle',
     description: 'coffeesDescription',
+  },
+  coffeeDetail: {
+    eyebrow: 'coffeeDetailEyebrow',
+    title: 'coffeeDetailTitle',
+    description: 'coffeeDetailDescription',
   },
   journal: {
     eyebrow: 'journalEyebrow',

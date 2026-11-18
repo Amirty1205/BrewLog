@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { AppShell } from '@/components/AppShell'
 import { PlaceholderPage } from '@/features/PlaceholderPage'
+import { MyCoffeesPage } from '@/features/coffees/MyCoffeesPage'
 import { HomePage } from '@/features/dashboard/HomePage'
 import { SettingsPage } from '@/features/settings/SettingsPage'
 
@@ -10,13 +11,10 @@ const router = createBrowserRouter([
     element: <AppShell />,
     children: [
       { index: true, element: <HomePage /> },
+      { path: 'coffees', element: <MyCoffeesPage /> },
       {
-        path: 'coffees',
-        element: (
-          <PlaceholderPage
-            page="coffees"
-          />
-        ),
+        path: 'coffees/:id',
+        element: <PlaceholderPage page="coffeeDetail" />,
       },
       {
         path: 'journal',
